@@ -1,9 +1,9 @@
 <?php
 class Cache { 
     
-	private $expire = 86400; 
+    private $expire = 3600; 
    
-    function get($key) {
+    public function get($key) {
         $data = apc_fetch($key);
         if($data) {
 			return $data;
@@ -12,7 +12,7 @@ class Cache {
 		}
     }
 
-    function set($key, $value) {
+    public function set($key, $value) {
         $this->delete($key);
 			apc_store($key, $value, $this->expire);
 		}
@@ -21,6 +21,10 @@ class Cache {
         if(apc_fetch($key)) {
 			apc_delete($key);
 		}
+	 }
+	 
+    public function flush() {
+	apc_clear_cache(); 
 	 }
 }
 ?>
