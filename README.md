@@ -12,7 +12,9 @@ Installation
 
 Popular Projects Using This Library :
 
-[Shoppiko - eCommerce Solution](https://shoppiko.com/ecommerce-store)
+[Shoppiko - eCommerce Solution](https://shoppiko.com/ecommerce-platform)
+
+[Freelansify - Freelancing Solution](https://freelansify.com/freelancing-platform)
 
 [Stangro - Startup Collection](https://stangro.com/)
 
